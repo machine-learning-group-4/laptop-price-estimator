@@ -54,6 +54,37 @@ laptop-price-estimator/
 ├── .gitignore
 └── README.md
 ```
+## Possible Structure
+```
+used-laptop-price-estimator/
+│
+├── dataset/
+│   ├── raw_data.csv
+│   └── cleaned_data.csv
+│
+├── notebooks/
+│   ├── data_cleaning.ipynb
+│   ├── eda.ipynb
+│   ├── model_training.ipynb
+│   └── model_evaluation.ipynb
+│
+├── model/
+│   ├── laptop_price_model.pkl
+│   └── preprocessing_pipeline.pkl
+│
+├── backend/
+│   ├── app.py
+│   ├── predict.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── README.md
+└── .gitignore
+```
 
 The `.venv` virtual environment is maintained locally and excluded from version control.
 
