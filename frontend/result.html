@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="result-page">
+
+    <nav class="nav">
+        <div class="logo">
+            LAP<span>WORTH</span>
+        </div>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="works.html">How it Works</a>
+            <a href="about.html">About</a>
+            <button id="theme-toggle" type="button">🌙</button>
+            <a href="predict.html" class="links-btn">Estimate Price</a>
+        </div>
+    </nav>
+
+    <main class="result-container">
+
+        <div class="result-header">
+            <h1>Your Laptop Price Estimate</h1>
+            <p>Here's the estimated value of your laptop based on the specifications provided.</p>
+        </div>
+
+        <section class="price-card">
+            <p class="price-label">Estimated Market Price</p>
+            <h2 id="predicted-price">₦850,000</h2>
+            <p class="price-description">
+                This is an estimated price based on your laptop specifications.
+            </p>
+        </section>
+
+        <section class="specification-card">
+
+            <div class="specification-heading">
+                <h2>Laptop Specifications</h2>
+                <p>Summary of the details you provided.</p>
+            </div>
+
+            <div class="specification-grid">
+
+                <div class="spec-item">
+                    <span>Brand</span>
+                    <h3 id="result-brand">HP</h3>
+                </div>
+
+                <div class="spec-item">
+                    <span>Model</span>
+                    <h3 id="result-model">EliteBook 840 G5</h3>
+                </div>
+
+                <div class="spec-item">
+                    <span>Laptop Type</span>
+                    <h3 id="result-type">Notebook</h3>
+                </div>
+
+                <div class="spec-item">
+                    <span>Processor</span>
+                    <h3 id="result-processor">Intel Core i5</h3>
+                </div>
+
+                <div class="spec-item">
+                    <span>Processor Speed</span>
+                    <h3 id="result-speed">2.4 GHz</h3>
+                </div>
+
+                <div class="spec-item">
+                    <span>Processor Cores</span>
+                    <h3 id="result-cores">4 Cores</h3>
+                </div>
+
+                <div class="spec-item">
+                    <span>RAM</span>
+                    <h3 id="result-ram">16 GB</h3>
+                </div>
+
+                <div class="spec-item">
+                    <span>Storage</span>
+                    <h3 id="result-storage">512 GB SSD</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="result-buttons">
+            <a href="predict.html" class="predict-btn">Predict Another Laptop</a>
+            <a href="index.html" class="home-btn">Back to Home</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 NAME | Machine Learning Laptop Price Estimator</p>
+        <p style="margin-top: 8px;">
+            GROUP 4 PROJECT
+        </p>
+    </footer>
+
+    <script src="theme.js"></script>
+
+</body>
+</html>
