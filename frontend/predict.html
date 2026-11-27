@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,197 +7,264 @@
     <title>Estimate Price</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body class="predict-page">
-   <nav class="nav">
 
-    <div class="logo">
-        <h2>LAP<span style="color:var(--heading-color);">WORTH</span></h2>
+    <nav class="nav">
+
+        <div class="logo">
+            <h2>LAP<span style="color:var(--heading-color);">WORTH</span></h2>
         </div>
 
-    <div class="links">
-    <a href="index.html">Home</a>
-    <a href="works.html">How it Works</a>  
-    <a href="about.html">About</a>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="works.html">How it Works</a>
+            <a href="about.html">About</a>
 
-     <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
-    <a href="predict.html" class="links-btn">Estimate Price</a>
-    </div>
-
-   </nav>
-
-   <main class="prediction-container">
-
-    <div class="prediction-header">
-        <h1>Estimate Your Laptop's Value</h1>
-        <p>Enter your laptop specifications below to get an estimated market price.</p>
-    </div>
-
-    <form id="prediction-form">
-
-        <div class="section">
-            <div class="section-heading">
-                <h2>Brand & Model</h2>
-            </div>
-
-            <div class="input">
-                <label for="brand">Laptop Brand</label>
-                <select name="brand" id="brand" required>
-                    <option value="">Select Brand</option>
-                    <option>HP</option>
-                    <option>Dell</option>
-                    <option>Lenovo</option>
-                    <option>Apple</option>
-                    <option>Asus</option>
-                    <option>Acer</option>
-                    <option>MSI</option>
-                    <option>Microsoft</option>
-                    <option>Samsung</option>
-                    <option>Toshiba</option>
-                    <option>Other</option>
-                </select>
-            </div>
-
-            <div class="input">
-                <label for="model">Laptop Model</label>
-                <input type="text" name="model" id="model" required  placeholder="e.g. HP EliteBook 840 G5">
-            </div>
-
-            <div class="input">
-                <label for="type">Laptop Type</label>
-                <select id="laptopType" name="laptopType" required>
-                    <option value="">Select laptop type</option>
-                    <option>Notebook</option>
-                    <option>Ultrabook</option>
-                    <option>Gaming Laptop</option>
-                    <option>Workstation</option>
-                    <option>Convertible / 2-in-1</option>
-                    <option>Chromebook</option>
-                </select>
-            </div>
+            <a href="predict.html" class="links-btn">Estimate Price</a>
         </div>
 
-        <div class="section">
-            <div class="section-heading">
-                <h2>Processor Specifications</h2>
-            </div>
+    </nav>
 
-            <div class="input">
-                <label for="processorbrand">Processor Brand</label>
-                <select id="processorbrand" name="processorbrand" required>
-                            <option value="">Select processor brand</option>
-                            <option>Intel</option>
-                            <option>AMD</option>
-                            <option>Apple</option>
-                            <option>Qualcomm</option>
-                        </select>
-            </div>
+    <main class="prediction-container">
 
-            <div class="input">
-                <label for="processormodel">Processor Model</label>
-               <input
-                            type="text"
-                            id="processormodel"
-                            name="processormodel"
-                            placeholder="e.g. Core i5-8250U"
-                            required
-                        >
-                    </div>
+        <div class="prediction-header">
+            <h1>Estimate Your Laptop's Value</h1>
+            <p>Enter your laptop specifications below to get an estimated market price.</p>
+        </div>
 
-                    <div class="input">
-                        <label for="processorspeed">Processor Speed (GHz)</label>
-                        <input
-                            type="number"
-                            id="processorspeed"
-                            name="processorspeed"
-                            placeholder="e.g. 2.4"
-                            step="0.1"
-                            min="0"
-                            required
-                        >
-                    </div>
+        <form id="prediction-form">
 
-                    <div class="input">
-                        <label for="cores">Number of Processor Cores</label>
-                        <select id="cores" name="cores" required>
-                            <option value="">Select number of cores</option>
-                            <option>2</option>
-                            <option>4</option>
-                            <option>6</option>
-                            <option>8</option>
-                            <option>10</option>
-                            <option>12</option>
-                            <option>14</option>
-                            <option>16</option>
-                            <option>18</option>
-                            <option>20</option>
-                            <option>24</option>
-                        </select>
-                    </div>
-
-            </div>
-
+            <!-- BRAND AND MODEL -->
             <div class="section">
+
                 <div class="section-heading">
-                    <h2>Memory and Storage</h2>                    
+                    <h2>Brand & Model</h2>
+                </div>
+
+                <div class="input">
+                    <label for="company">Laptop Brand</label>
+                    <select name="Company" id="company" required>
+                        <option value="">Select Brand</option>
+                        <option>Apple</option>
+                        <option>HP</option>
+                        <option>Acer</option>
+                        <option>Asus</option>
+                        <option>Dell</option>
+                        <option>Lenovo</option>
+                        <option>Chuwi</option>
+                        <option>MSI</option>
+                        <option>Microsoft</option>
+                        <option>Toshiba</option>
+                        <option>Huawei</option>
+       	                <option>Xiaomi</option>
+                        <option>Vero</option>
+                        <option>Razer</option>
+                        <option>Mediacom</option>
+                        <option>Samsung</option>
+                        <option>Google</option>
+                        <option>Fujitsu</option>
+                        <option>LG</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="product">Laptop Model</label>
+                    <input
+                        type="text"
+                        name="Product"
+                        id="product"
+                        placeholder="e.g. MacBook Pro, 250 G6"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <!-- LAPTOP SPECIFICATIONS -->
+            <div class="section">
+
+                <div class="section-heading">
+                    <h2>Laptop Specifications</h2>
+                </div>
+
+                <div class="input">
+                    <label for="typeName">Laptop Type</label>
+                    <select name="TypeName" id="typeName" required>
+                        <option value="">Select laptop type</option>
+                        <option>Ultrabook</option>
+                        <option>Notebook</option>
+                        <option>Netbook</option>
+                        <option>Gaming</option>
+                        <option>2 in 1 Convertible</option>
+                        <option>Workstation</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="inches">Screen Size (Inches)</label>
+                    <select name="Inches" id="inches" required>
+                        <option value="">Select screen size</option>
+                        <option>10.1</option>
+                        <option>11.3</option>
+                        <option>11.6</option>
+                        <option>12.0</option>
+                        <option>12.3</option>
+                        <option>12.5</option>
+                        <option>13.0</option>
+                        <option>13.3</option>
+                        <option>13.5</option>
+                        <option>13.9</option>
+                        <option>14.0</option>
+                        <option>14.1</option>
+                        <option>15.0</option>
+                        <option>15.4</option>
+                        <option>15.6</option>
+                        <option>17.0</option>
+                        <option>17.3</option>
+                        <option>18.4</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="screenResolution">Screen Resolution</label>
+                    <input
+                        type="text"
+                        name="ScreenResolution"
+                        id="screenResolution"
+                        placeholder="e.g. Full HD 1920x1080"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <!-- PROCESSOR AND GRAPHICS -->
+            <div class="section">
+
+                <div class="section-heading">
+                    <h2>Processor & Graphics</h2>
+                </div>
+
+                <div class="input">
+                    <label for="cpu">Processor (CPU)</label>
+                    <input
+                        type="text"
+                        name="Cpu"
+                        id="cpu"
+                        placeholder="e.g. Intel Core i5 7200U 2.5GHz"
+                        required
+                    >
+                </div>
+
+                <div class="input">
+                    <label for="gpu">Graphics Card (GPU)</label>
+                    <input
+                        type="text"
+                        name="Gpu"
+                        id="gpu"
+                        placeholder="e.g. Intel HD Graphics 620"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <!-- MEMORY AND STORAGE -->
+            <div class="section">
+
+                <div class="section-heading">
+                    <h2>Memory & Storage</h2>
                 </div>
 
                 <div class="input">
                     <label for="ram">RAM Size</label>
-                    <select id="ram" name="ram" required>
-                            <option value="">Select RAM size</option>
-                            <option>2GB</option>
-                            <option>4GB</option>
-                            <option>8GB</option>
-                            <option>12GB</option>
-                            <option>16GB</option>
-                            <option>24GB</option>
-                            <option>32GB</option>
-                            <option>64GB</option>
-                        </select>
+                    <select name="Ram" id="ram" required>
+                        <option value="">Select RAM size</option>
+                        <option>2GB</option>
+                        <option>4GB</option>
+                        <option>6GB</option>
+                        <option>8GB</option>
+                        <option>12GB</option>
+                        <option>16GB</option>
+                        <option>24GB</option>
+                        <option>32GB</option>
+                        <option>64GB</option>
+                    </select>
                 </div>
 
                 <div class="input">
-                    <label for="storagetype">Storage Type</label>
-                    <select id="storageType" name="storageType" required>
-                            <option value="">Select storage type</option>
-                            <option>HDD</option>
-                            <option>SSD</option>
-                            <option>Hybrid</option>
-                            <option>eMMC</option>
-                        </select>
+                    <label for="memory">Storage Configuration</label>
+                    <input
+                        type="text"
+                        name="Memory"
+                        id="memory"
+                        placeholder="e.g. 256GB SSD, 1TB HDD"
+                        required
+                    >
                 </div>
 
-                <div class="input">
-                    <label for="storagesize">Storage Size</label>
-                    <select id="storagesize" name="storagesize" required>
-                            <option value="">Select storage size</option>
-                            <option>128GB</option>
-                            <option>256GB</option>
-                            <option>512GB</option>
-                            <option>1TB</option>
-                            <option>2TB</option>
-                            <option>4TB</option>
-                        </select>
             </div>
 
-        </div>
+            <!-- OTHER SPECIFICATIONS -->
+            <div class="section">
 
-        <div class="predict-predict">
-            <a href="predict.html" class="predict-btn">Estimate Price</a>
-        </div>
-    </form>
-    
-   </main>
+                <div class="section-heading">
+                    <h2>Other Specifications</h2>
+                </div>
 
-   <footer>
-        <p>© 2026 NAME | Machine Learning Laptop Price Estimator</p>
+                <div class="input">
+                    <label for="opSys">Operating System</label>
+                    <select name="OpSys" id="opSys" required>
+                        <option value="">Select operating system</option>
+                        <option>Windows 10</option>
+                        <option>Windows 10 S</option>
+                        <option>Windows 7</option>
+                        <option>macOS</option>
+                        <option>Mac OS X</option>
+                        <option>Linux</option>
+                        <option>Chrome OS</option>
+                        <option>Android</option>
+                        <option>No OS</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="weight">Laptop Weight (kg)</label>
+                    <input
+                        type="number"
+                        name="Weight"
+                        id="weight"
+                        placeholder="e.g. 1.37"
+                        step="0.01"
+                        min="0"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <div class="predict-predict">
+                <button type="submit" class="predict-btn">
+                    Estimate Price
+                </button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>© 2026 LAPWORTH | Machine Learning Laptop Price Estimator</p>
         <p style="margin-top: 8px;">
             GROUP 4 PROJECT
         </p>
     </footer>
 
-     <script src="theme.js" defer></script>
+    <script src="theme.js" defer></script>
 
 </body>
 </html>

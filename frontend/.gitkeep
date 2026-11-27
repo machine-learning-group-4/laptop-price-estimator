@@ -1,0 +1,30 @@
+Company              object
+Product              object
+TypeName             object
+Inches              float64
+ScreenResolution     object
+Cpu                  object
+Ram                  object
+Memory               object
+Gpu                  object
+OpSys                object
+Weight               object
+Price_ngn     
+
+
+
+laptop_ID	Integer	Identifier
+Company	Categorical	Laptop brand
+Product	Categorical	Laptop model name
+TypeName	Categorical	Laptop category
+Inches	Numerical	Screen size
+ScreenResolution	Categorical	Resolution and screen details
+Cpu	Categorical	Processor specification
+Ram	Categorical currently	RAM capacity
+Memory	Categorical	Storage specification
+Gpu	Categorical	Graphics processor
+OpSys	Categorical	Operating system
+Weight	Categorical currently	Laptop weight
+Price_ngn	Numerical	Target price
+
+algorithm: random forest regressor
