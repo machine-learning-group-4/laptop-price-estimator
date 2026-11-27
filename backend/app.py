@@ -1,35 +1,20 @@
 
-from flask import Flask, request, jsonify
+from flask import Flask
 from flask_cors import CORS
 
+from routes import api
+
+
+# Initialize Flask application
 app = Flask(__name__)
 
-# Allow frontend applications to communicate with the backend
+# Enable frontend communication
 CORS(app)
 
-
-@app.route("/", methods=["GET"])
-def home():
-    return jsonify({
-        "message": "Laptop Price Estimator API is running!"
-    })
+# Register our API routes
+app.register_blueprint(api)
 
 
-@app.route("/predict", methods=["POST"])
-def predict():
-
-    data = request.get_json()
-
-    if not data:
-        return jsonify({
-            "error": "No data provided"
-        }), 400
-
-    return jsonify({
-        "message": "Laptop specifications received successfully",
-        "received_data": data
-    }), 200
-
-
+# Run the application
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
