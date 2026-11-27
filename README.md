@@ -96,14 +96,14 @@ The project is being developed by a team of six members.
 
 | Member | Responsibility |
 |---|---|
-| Member 1 | Project coordination and requirements |
-| Member 2 | Dataset collection and research |
-| Member 3 | Data preprocessing and machine learning |
-| Member 4 | Model evaluation and experimentation |
-| Member 5 | Frontend development |
-| Member 6 | Backend development and API integration |
+| Joseph Justus Chukwukaima | Data Collection and Processing |
+| Edobor-Osula Gabriel Owen | Exploratory Data Analysis (EDA) |
+| Robinson Ibitamuno Asimetamunopiri | Model Development |
+| Inifiye-Israel Conquered | Model Evaluation and Optimization |
+| Okoye Ogechi Angel | Frontend development |
+| Ukah-Nwokejiezi Nzubechukwu Christiantus | Backend development and Model integration |
+| Okuneso Harold Oluwamayowa | Project Documentation |
 
-*Note: The distribution above is a proposed documentation template. Update it to reflect the actual responsibilities agreed upon by the group.*
 
 ### Backend Development Responsibilities
 
@@ -211,7 +211,9 @@ Planned milestones:
 
 ## 10. Contributors
 
-Machine Learning Group 4
+1. shychristian
+
+2. Kimi1407
 
 GitHub Repository:
 
