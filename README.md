@@ -209,8 +209,9 @@ Planned milestones:
 
 ## 10. Contributors
 
-shychristian
-Kimi1407
+1. shychristian
+
+2. Kimi1407
 
 GitHub Repository:
 
