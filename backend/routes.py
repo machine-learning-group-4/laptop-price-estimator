@@ -1,5 +1,6 @@
 
 from flask import Blueprint, request, jsonify
+from validators import validate_prediction_payload
 
 # Create a Blueprint for our API routes
 api = Blueprint("api", __name__)
@@ -26,30 +27,18 @@ def health():
 # Prediction endpoint
 @api.route("/predict", methods=["POST"])
 def predict():
-
     data = request.get_json(silent=True)
+    validated_data, error = validate_prediction_payload(data)
 
-    if data is None:
+    if error:
         return jsonify({
             "status": "error",
-            "error": "Invalid or missing JSON data"
-        }), 400
-
-    if not isinstance(data, dict):
-        return jsonify({
-            "status": "error",
-            "error": "Request data must be a JSON object"
-        }), 400
-
-    if not data:
-        return jsonify({
-            "status": "error",
-            "error": "No data provided"
+            "error": error
         }), 400
 
     return jsonify({
         "status": "success",
         "message": "Data received successfully",
-        "received_data": data,
+        "received_data": validated_data,
         "prediction_status": "not_ready"
     }), 200
