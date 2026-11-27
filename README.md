@@ -102,7 +102,6 @@ The project is being developed by a team of six members.
 | Ukah-Nwokejiezi Nzubechukwu Christiantus | Backend development and Model integration |
 | Okuneso Harold Oluwamayowa | Project Documentation |
 
-*Note: The distribution above is a proposed documentation template. Update it to reflect the actual responsibilities agreed upon by the group.*
 
 ### Backend Development Responsibilities
 
