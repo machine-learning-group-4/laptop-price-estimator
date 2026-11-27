@@ -54,8 +54,10 @@ laptop-price-estimator/
 ├── .gitignore
 └── README.md
 ```
+
 ## Possible Structure
-```
+
+```text
 used-laptop-price-estimator/
 │
 ├── dataset/
